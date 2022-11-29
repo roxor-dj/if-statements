@@ -1,3 +1,9 @@
+/* Kreirati dve promenljive x i y. 
+  Ukoliko je proizvod dva broja manji od 100 ispisati poruku "Proizvod je manju od 100"
+  Ukoliko je proizvod jednak ili veci 100 a manji od 1000 ispisati poruku "Proizvod se nalazi u intervalu od 100 do 1000"
+  Ukoliko je proizvod veci ili jedan od 1000 odstampati  "Proizvod veci od 1000".
+*/
+
 let a;
 let b;
 
@@ -6,7 +12,7 @@ let sum = function(a, b){
     return "Proizvod je manji od 100";
   }
     else{
-      if( a * b > 100 && a * b < 1000){
+      if( a * b >= 100 && a * b < 1000){
         return "Proizvod se nalazi u intervalu od 100 do 1000";
       }
     else{
