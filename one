@@ -1,0 +1,22 @@
+let a;
+let b;
+
+let sum = function(a, b){
+  if( a * b < 100){
+    return "Proizvod je manji od 100";
+  }
+    else{
+      if( a * b > 100 && a * b < 1000){
+        return "Proizvod se nalazi u intervalu od 100 do 1000";
+      }
+    else{
+     if(a * b >= 1000){
+        return "Proizvod je veci od 1000"
+     }
+  } 
+  }
+}
+
+console.log(sum(50, 1))
+console.log(sum(50, 3))
+console.log(sum(500, 5))
